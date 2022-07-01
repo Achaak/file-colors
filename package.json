@@ -1,22 +1,25 @@
 {
   "name": "file-colors",
-  "version": "1.0.2",
-  "description": "Tools to get os svg.",
-  "main": "./lib/index.js",
-  "module": "lib/index.es.js",
-  "jsnext:main": "lib/index.es.js",
+  "version": "1.0.3",
+  "description": "Tools to get color of file.",
+  "main": "./dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "keywords": [
     "react",
     "lib",
     "svg",
-    "os"
+    "color",
+    "file"
   ],
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "prettier --write \"./**/*.ts\"",
+    "lint": "eslint src --fix"
   },
   "author": {
     "name": "Axel Lavoie",
@@ -29,13 +32,16 @@
   "homepage": "https://github.com/Achaak/file-colors#readme",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^2.35.1",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "typescript": "^4.1.3"
+    "tsup": "^5.12.8",
+    "typescript": "^4.1.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-json": "3.1.0",
+    "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "eslint": "8.18.0",
+    "prettier": "^2.7.1"
   },
   "dependencies": {},
   "peerDependencies": {}

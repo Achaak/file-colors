@@ -1,5 +1,5 @@
 # file-colors
-Tools to get os svg.
+Tools to get color of file.
 
 ## Install
 
@@ -13,12 +13,12 @@ npm i file-colors --save
 [https://github.com/Achaak/file-colors/blob/master/CHANGELOG.md](https://github.com/Achaak/file-colors/blob/master/CHANGELOG.md)
 
 ## Functions
-### getColorByExtention
+### getColorByExtension
 Return color by extension
 
 Example:
 ``` js
-const color = getColorByExtention("png")
+const color = getColorByExtension("png")
 ```
 
 ## Credit
