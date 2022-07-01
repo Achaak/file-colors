@@ -9,9 +9,6 @@ yarn add file-colors
 npm i file-colors --save
 ```
 
-## Change log
-[https://github.com/Achaak/file-colors/blob/master/CHANGELOG.md](https://github.com/Achaak/file-colors/blob/master/CHANGELOG.md)
-
 ## Functions
 ### getColorByExtension
 Return color by extension
