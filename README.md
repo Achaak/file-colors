@@ -1,5 +1,5 @@
 # file-colors
-Tools to get color of file.
+This package aims to provide a color according to the extension of a file.
 
 ## Install
 
